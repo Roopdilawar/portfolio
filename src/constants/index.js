@@ -98,15 +98,15 @@ const technologies = [
     icon: android,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "aws",
+    name: "AWS",
     icon: aws,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
   {
