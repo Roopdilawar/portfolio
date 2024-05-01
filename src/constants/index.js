@@ -4,16 +4,12 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -23,6 +19,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  django,
+  risc,
+  android,
+  aws
 } from "../assets";
 
 export const navLinks = [
@@ -42,24 +43,32 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Silicon Validation",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Android Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "DevOps",
     icon: creator,
   },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -73,44 +82,36 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
+  },
+  {
+    name: "Android Studio",
+    icon: android,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "aws",
+    icon: aws,
   },
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Risc-V",
+    icon: risc,
   },
 ];
 

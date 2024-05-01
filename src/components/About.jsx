@@ -47,11 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a proficient software developer with a strong background in Python, C, and JavaScript, skilled in utilizing frameworks such as React and Django. During my time at Meta, I significantly improved CI/CD pipeline efficiency and contributed to advanced silicon validation projects, demonstrating my ability to tackle complex software challenges. Adept at learning and implementing new technologies rapidly, I collaborate effectively with teams to deliver scalable and robust solutions. Let's collaborate to transform your concepts into impactful, real-world applications!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
