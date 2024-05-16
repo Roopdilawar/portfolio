@@ -13,32 +13,34 @@ const FeedbackCard = ({
   designation,
   company,
   image,
+  linkedin,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
   >
-    <p className='text-white font-black text-[48px]'>"</p>
-
-    <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
-
-      <div className='mt-7 flex justify-between items-center gap-1'>
-        <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
+    <div className='flex justify-between items-center gap-1 mb-7'>
+      <div className='flex-1 flex flex-col'>
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
+          <p className='text-white font-bold text-[18px]'>
             <span className='blue-text-gradient'>@</span> {name}
           </p>
-          <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
-          </p>
-        </div>
-
+        </a>
+        <p className='mt-1 text-secondary text-[14px]'>
+          {designation} at {company}
+        </p>
+      </div>
+      <a href={linkedin} target="_blank" rel="noopener noreferrer">
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
+          className='w-14 h-14 rounded-full object-cover'
         />
-      </div>
+      </a>
+    </div>
+
+    <div className='mt-1'>
+      <p className='text-white tracking-wider text-[14px]'>{testimonial}</p>
     </div>
   </motion.div>
 );
@@ -51,7 +53,7 @@ const Feedbacks = () => {
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <h2 className={styles.sectionHeadText}>References.</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>

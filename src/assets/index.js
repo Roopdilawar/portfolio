@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -35,6 +35,9 @@ import hcl from "./company/hcl.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import qr_game from "./qr_game.png";
+import risc_typing from "./risc_typing.png";
+import social_dist from "./social_dist.png";
 
 export {
   logo,
@@ -70,5 +73,8 @@ export {
   django,
   risc,
   android,
-  aws
+  aws,
+  qr_game,
+  risc_typing,
+  social_dist,
 };

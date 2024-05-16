@@ -23,7 +23,10 @@ import {
   django,
   risc,
   android,
-  aws
+  aws,
+  qr_game,
+  risc_typing,
+  social_dist,
 } from "../assets";
 
 export const navLinks = [
@@ -167,93 +170,92 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Worked under Raj to implement the Silicon Test Coverage and Randomization frameworks.",
+    name: "Rajkumar Manicka",
+    designation: "Service Delivery Manager",
+    company: "HCL@Meta",
+    image: "https://media.licdn.com/dms/image/D5603AQEnq96OtAR2BQ/profile-displayphoto-shrink_400_400/0/1666668047628?e=1721260800&v=beta&t=OcW_osGY0q7JZZKud8Dghga2SrHH2jDSJDUgZGHd5xU",
+    linkedin: "https://www.linkedin.com/in/rajkumaremail/",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Worked under Sara to develop FW Package CI/CD pipelines from the ground up.",
+    name: "Sara Sepasian",
+    designation: "Software Engineer",
+    company: "Meta",
+    image: "https://media.licdn.com/dms/image/C5603AQFtlatxJV1log/profile-displayphoto-shrink_400_400/0/1554933203242?e=1721260800&v=beta&t=zvVTz6pQ1fn3KGo62QfW5zNSky4NskeHUQ4UMRnNgIA",
+    linkedin: "https://www.linkedin.com/in/ssepasian/",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Worked alongside Gary and the team to automate Silcon Validation tests and develop the Randomization Framework.",
+    name: "Gary Oikawa",
+    designation: "Senior Manager Software Development",
+    company: "AMD",
+    image: "https://media.licdn.com/dms/image/D5603AQENPmJYRXANpw/profile-displayphoto-shrink_400_400/0/1714362970466?e=1721260800&v=beta&t=KQV-JslznFcIUmeO21qwe4NJs8nDpot7zscaAxffwhs",
+    linkedin: "https://www.linkedin.com/in/garyoikawa/",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Social Distribution",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Spearheaded the development of a cutting-edge decentralized social media platform, utilizing React, Django, Heroku, and PostgreSQL. The project enabled seamless interconnectivity across diverse nodes, fostering a decentralized communication network. A REST API-compliant system was implemented to ensure robust interoperability, allowing users to engage and interact in a secure and decentralized environment. This initiative not only enhanced user privacy and data security but also promoted a more democratic and resilient social media ecosystem.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "django",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "aws",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: social_dist,
+    source_code_link: "https://github.com/uofa-cmput404/w24-project-webwizards.git",
   },
   {
-    name: "Job IT",
+    name: "QR Code Game",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Designed and developed an innovative QR code scanning game for Android, inspired by Pokémon Go. This app integrated geolocation, cloud photo storage, and a global leaderboard to enhance user engagement and competition. Leveraging Android Studio and Java for the development, and Firebase for backend services and cloud storage, the game offered a dynamic and interactive experience. The project showcased expertise in mobile app development and effective use of various software development tools and technologies, resulting in a unique and engaging user experience.",
     tags: [
       {
-        name: "react",
+        name: "android_studio",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "java",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: qr_game,
+    source_code_link: "https://github.com/CMPUT301W22T32/LoveForJava",
   },
   {
-    name: "Trip Guide",
+    name: "Typing Game in Assembly",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed an interactive typing game in Assembly using RISC-V architecture, featuring score tracking, timer, and clock functionalities. The game dynamically assessed typing skills by calculating scores based on typing speed and error frequency, providing precise and real-time performance feedback. This project highlighted proficiency in low-level programming and demonstrated the ability to create engaging and educational applications using RISC-V assembly language.",
     tags: [
       {
-        name: "nextjs",
+        name: "risc-v",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "rars",
         color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: risc_typing,
+    source_code_link: "https://github.com/cmput229-fa21/lab_typinggame-Roopdilawar/tree/main",
   },
 ];
 
