@@ -136,7 +136,7 @@ const experiences = [
     company_name: "HCL Tech",
     icon: hcl,
     iconBg: "#E6DEDD",
-    date: "May 2022 - August 2023",
+    date: "May 2024 - Present",
     points: [
       "Working at Meta as a Contingent Worker.",
     ],
