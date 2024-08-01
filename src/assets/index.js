@@ -38,6 +38,10 @@ import tripguide from "./tripguide.png";
 import qr_game from "./qr_game.png";
 import risc_typing from "./risc_typing.png";
 import social_dist from "./social_dist.png";
+import raj from "./raj.jpeg";
+import sara from "./sara.jpeg";
+import gary from "./gary.jpeg";
+
 
 export {
   logo,
@@ -77,4 +81,7 @@ export {
   qr_game,
   risc_typing,
   social_dist,
+  raj,
+  sara,
+  gary
 };

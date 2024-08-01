@@ -27,6 +27,9 @@ import {
   qr_game,
   risc_typing,
   social_dist,
+  raj,
+  sara,
+  gary
 } from "../assets";
 
 export const navLinks = [
@@ -126,7 +129,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2024 - Present",
     points: [
-      "Working on developing brand new CI/CD pipelines to automate testing processes.",
+      "Working in the Silicon Validation Team helping develop Meta's next-generation ML training ASICs and chips.",
+      "Developing brand new CI/CD pipelines to automate testing processes.",
       "Creating a brand new web app to analyse testing progress across all our silicon chip projects",
       "Working on porting internal tools and libraries to Rust"
     ],
@@ -174,7 +178,7 @@ const testimonials = [
     name: "Rajkumar Manicka",
     designation: "Service Delivery Manager",
     company: "HCL@Meta",
-    image: "https://media.licdn.com/dms/image/D5603AQEnq96OtAR2BQ/profile-displayphoto-shrink_400_400/0/1666668047628?e=1721260800&v=beta&t=OcW_osGY0q7JZZKud8Dghga2SrHH2jDSJDUgZGHd5xU",
+    image: raj,
     linkedin: "https://www.linkedin.com/in/rajkumaremail/",
   },
   {
@@ -183,7 +187,7 @@ const testimonials = [
     name: "Sara Sepasian",
     designation: "Software Engineer",
     company: "Meta",
-    image: "https://media.licdn.com/dms/image/C5603AQFtlatxJV1log/profile-displayphoto-shrink_400_400/0/1554933203242?e=1721260800&v=beta&t=zvVTz6pQ1fn3KGo62QfW5zNSky4NskeHUQ4UMRnNgIA",
+    image: sara,
     linkedin: "https://www.linkedin.com/in/ssepasian/",
   },
   {
@@ -192,7 +196,7 @@ const testimonials = [
     name: "Gary Oikawa",
     designation: "Senior Manager Software Development",
     company: "AMD",
-    image: "https://media.licdn.com/dms/image/D5603AQENPmJYRXANpw/profile-displayphoto-shrink_400_400/0/1714362970466?e=1721260800&v=beta&t=KQV-JslznFcIUmeO21qwe4NJs8nDpot7zscaAxffwhs",
+    image: gary,
     linkedin: "https://www.linkedin.com/in/garyoikawa/",
   },
 ];
