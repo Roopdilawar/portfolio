@@ -22,6 +22,9 @@ const App = () => {
       setShowMobileWarning(true);
       // Disable scrolling when the mobile warning is displayed
       document.body.style.overflow = "hidden";
+    } else {
+      // Allow scrolling for non-mobile devices
+      document.body.style.overflow = "auto";
     }
 
     // Cleanup function to reset scroll behavior when the component unmounts or changes
@@ -30,25 +33,23 @@ const App = () => {
     };
   }, []);
 
+  if (showMobileWarning) {
+    // Render only the warning message if the device is mobile
+    return (
+      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
+        <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg text-center max-w-md mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Unsupported Device</h2>
+          <p className="text-lg">
+            This website is optimized for PC. Mobile devices are not supported at this time.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <BrowserRouter>
-      {showMobileWarning && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
-          <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg text-center max-w-md mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Unsupported Device</h2>
-            <p className="text-lg">
-              This website is optimized for PC. Mobile devices are not
-              supported at this time.
-            </p>
-          </div>
-        </div>
-      )}
-
-      <div
-        className={`relative z-0 bg-primary ${
-          showMobileWarning ? "opacity-50" : ""
-        }`}
-      >
+      <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
