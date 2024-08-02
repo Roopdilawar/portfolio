@@ -60,6 +60,15 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              href='/Roopdilawar_Singh_CV.pdf'
+              download
+              className='bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition duration-200'
+            >
+              Download CV
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -90,6 +99,15 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href='/Roopdilawar_Singh_CV.pdf'
+                  download
+                  className='bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition duration-200'
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
