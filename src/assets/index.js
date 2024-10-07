@@ -4,6 +4,8 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import appStoreIcon from "./app_store.png";
+import webpageIcon from "./web_link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -25,18 +27,17 @@ import django from "./tech/django.png";
 import risc from "./tech/risc.png";
 import android from "./tech/android.png";
 import aws from "./tech/aws.png";
+import cuda from "./tech/cuda.png";
+import cpp from "./tech/cpp_logo.png";
+import firebase from "./tech/firebase_logo.png";
+import nsight from "./tech/nsight_logo.png";
+
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import hcl from "./company/hcl.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import qr_game from "./qr_game.png";
-import risc_typing from "./risc_typing.png";
+import shifttracker from "./shifttracker.png";
+import raytracer from "./ray_tracer.png";
 import social_dist from "./social_dist.png";
 import raj from "./raj.jpeg";
 import sara from "./sara.jpeg";
@@ -56,6 +57,8 @@ export {
   docker,
   figma,
   git,
+  appStoreIcon,
+  webpageIcon,
   html,
   javascript,
   mongodb,
@@ -66,20 +69,18 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
   hcl,
-  carrent,
-  jobit,
-  tripguide,
   python,
   django,
   risc,
   android,
   aws,
-  qr_game,
-  risc_typing,
+  cuda,
+  cpp,
+  firebase,
+  nsight,
+  raytracer,
+  shifttracker,
   social_dist,
   raj,
   sara,

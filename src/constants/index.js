@@ -4,28 +4,22 @@ import {
   creator,
   web,
   javascript,
-  html,
-  css,
   reactjs,
-  nodejs,
   git,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
   hcl,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   python,
   django,
   risc,
   android,
   aws,
-  qr_game,
-  risc_typing,
+  cuda,
+  cpp,
+  firebase,
+  shifttracker,
+  raytracer,
   social_dist,
   raj,
   sara,
@@ -72,16 +66,12 @@ const technologies = [
     icon: python,
   },
   {
-    name: "Django",
-    icon: django,
+    name: "C++",
+    icon: cpp,
   },
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Cuda",
+    icon: cuda,
   },
   {
     name: "JavaScript",
@@ -92,8 +82,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Django",
+    icon: django,
   },
   {
     name: "Three JS",
@@ -110,6 +100,10 @@ const technologies = [
   {
     name: "AWS",
     icon: aws,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "Docker",
@@ -203,6 +197,57 @@ const testimonials = [
 
 const projects = [
   {
+    name: "ShiftTracker",
+    description:
+      "Developed LS ShiftTracker, a React Native app for iOS and Android, deployed on App Store and Play Store, with features like geo-fencing, live location tracking, cloud image storage, and employee/admin views, etc, enhancing logistics operations for LS Carriers. Integrated Firebase for backend functionality, providing real-time updates, secure data storage, and streamlined reporting for hundreds of users. Achieved significant improvements in company efficiency by automating shift tracking, fuel consumption logging, and time management for drivers and admins.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ios",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shifttracker,
+    source_code_link: "https://github.com/Roopdilawar/ShiftTracker",
+    app_store_link: "https://apps.apple.com/ca/app/ls-shifttracker/id6636515709",
+  },
+  {
+    name: "RayTracerCUDA",
+    description:
+      "CUDA-Accelerated Ray Tracing Engine: Spearheaded the development of a high-performance, GPU-optimized ray tracing engine using NVIDIA CUDA, achieving massive 300x speedup over conventional CPU-based implementations. Leveraged parallel processing and advanced memory management to handle complex rendering tasks, integrating bilateral denoising algorithms and anti-aliasing for high-resolution, photorealistic outputs. Engineered a scalable architecture for real-time image rendering with multi-threading, optimized kernel launches, and GPU compute capability utilization.",
+    tags: [
+      {
+        name: "cuda",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c++",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nsight-systems",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "cmake",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: raytracer,
+    source_code_link: "https://github.com/Roopdilawar/RayTracerCUDA",
+  },
+  {
     name: "Social Distribution",
     description:
       "Spearheaded the development of a cutting-edge decentralized social media platform, utilizing React, Django, Heroku, and PostgreSQL. The project enabled seamless interconnectivity across diverse nodes, fostering a decentralized communication network. A REST API-compliant system was implemented to ensure robust interoperability, allowing users to engage and interact in a secure and decentralized environment. This initiative not only enhanced user privacy and data security but also promoted a more democratic and resilient social media ecosystem.",
@@ -222,44 +267,7 @@ const projects = [
     ],
     image: social_dist,
     source_code_link: "https://github.com/uofa-cmput404/w24-project-webwizards.git",
-  },
-  {
-    name: "QR Code Game",
-    description:
-      "Designed and developed an innovative QR code scanning game for Android, inspired by Pokémon Go. This app integrated geolocation, cloud photo storage, and a global leaderboard to enhance user engagement and competition. Leveraging Android Studio and Java for the development, and Firebase for backend services and cloud storage, the game offered a dynamic and interactive experience. The project showcased expertise in mobile app development and effective use of various software development tools and technologies, resulting in a unique and engaging user experience.",
-    tags: [
-      {
-        name: "android_studio",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "java",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: qr_game,
-    source_code_link: "https://github.com/CMPUT301W22T32/LoveForJava",
-  },
-  {
-    name: "Typing Game in Assembly",
-    description:
-      "Developed an interactive typing game in Assembly using RISC-V architecture, featuring score tracking, timer, and clock functionalities. The game dynamically assessed typing skills by calculating scores based on typing speed and error frequency, providing precise and real-time performance feedback. This project highlighted proficiency in low-level programming and demonstrated the ability to create engaging and educational applications using RISC-V assembly language.",
-    tags: [
-      {
-        name: "risc-v",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rars",
-        color: "green-text-gradient",
-      }
-    ],
-    image: risc_typing,
-    source_code_link: "https://github.com/cmput229-fa21/lab_typinggame-Roopdilawar/tree/main",
+    webpage_link: "https://social-distribution-95d43f28bb8f.herokuapp.com/signin",
   },
 ];
 

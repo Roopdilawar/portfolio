@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import LazyLoad from "react-lazyload";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, appStoreIcon, webpageIcon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -16,6 +16,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  app_store_link,
+  webpage_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -36,16 +38,42 @@ const ProjectCard = ({
             />
           </LazyLoad>
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+            {source_code_link && (
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
+            {app_store_link && (
+              <div
+                onClick={() => window.open(app_store_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2'
+              >
+                <img
+                  src={appStoreIcon}
+                  alt='app store'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
+            {webpage_link && (
+              <div
+                onClick={() => window.open(webpage_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2'
+              >
+                <img
+                  src={webpageIcon}
+                  alt='webpage'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
           </div>
         </div>
 
